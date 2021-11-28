@@ -1,0 +1,4 @@
+<launch>
+	<node name = "listener" pkg="edrom_tutorial" type="listener" output="screen"/>
+	<node name = "talker" pkg="edrom_tutorial" type="talker" output="screen"/>
+</launch>

@@ -17,7 +17,7 @@ import warnings
 warnings.simplefilter(action='ignore', category = FutureWarning)
 
 
-os.chdir('Visao/Tarefa_3/BallDataset/')
+os.chdir('/media/paulo/Novo volume/Curso python/Trainee_EDROM/Visao/Tarefa_3/BallDataset/')
 if os.path.isdir('train/') is False:
     os.mkdir('train/')
     os.mkdir('valid/')
@@ -56,9 +56,9 @@ train_batches = ImageDataGenerator(preprocessing_function=tf.keras.applications.
 valid_batches = ImageDataGenerator(preprocessing_function=tf.keras.applications.vgg16.preprocess_input).flow_from_directory(directory=valid_path,classes = ['ball', 'no_ball'], target_size=(224,224),batch_size=10)
 test_batches = ImageDataGenerator(preprocessing_function=tf.keras.applications.vgg16.preprocess_input).flow_from_directory(directory=test_path,classes = ['ball', 'no_ball'], target_size=(224,224),batch_size=10, shuffle=False)
 
-assert train_batches.n == 275
-assert valid_batches.n == 25
-assert test_batches.n == 50
+assert train_batches.n == 345
+assert valid_batches.n == 95
+assert test_batches.n == 120
 assert train_batches.num_classes == valid_batches.num_classes == test_batches.num_classes == 2
 
 model = Sequential([

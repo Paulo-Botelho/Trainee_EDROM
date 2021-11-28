@@ -1,0 +1,8 @@
+prefix=/home/paulo/edrom/devel
+
+Name: edrom_tutorial
+Description: Description of edrom_tutorial
+Version: 0.0.0
+Cflags: -I/home/paulo/edrom/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime

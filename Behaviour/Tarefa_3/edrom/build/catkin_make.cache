@@ -1,0 +1,2 @@
+edrom_tutorial
+-DCATKIN_DEVEL_PREFIX=/home/paulo/edrom/devel -DCMAKE_INSTALL_PREFIX=/home/paulo/edrom/install -G Unix Makefiles
